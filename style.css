@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #FFD700 !important;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.hero .btn-gold {
+    background-color: #FFD700;
+    color: #003366;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    animation: fadeInUp 1.4s ease-in-out;
+}
+
+.hero .btn-gold:hover {
+    background-color: #FFC700;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5e4b33; /* Darker brown */
+}
+
+/* Schemes Cards */
+.card {
+    border: none;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-size: 1.4rem;
+    color: #003366;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #5e4b33; /* Dark earthy brown */
+    border-color: #5e4b33;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #00294d;
+    border-color: #00294d;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #003366;
+}
+
+.form-control, .form-select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #003366;
+    box-shadow: 0px 0px 5px rgba(0, 51, 102, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #00294d;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
