@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pradhan Mantri Awas Yojana (PMAY)</title>
+    <title data-i18n="awas-title">Pradhan Mantri Awas Yojana (PMAY)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,54 +12,64 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">Maharashtra Migrant Schemes</a>
+            <a class="navbar-brand" href="#" data-i18n="navbar-brand">Maharashtra Migrant Schemes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#schemes">Schemes</a>
+                        <a class="nav-link" href="index.html#schemes" data-i18n="schemes-link">Schemes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#eligibility-checker">Eligibility Checker</a>
+                        <a class="nav-link" href="index.html#eligibility-checker" data-i18n="eligibility-link">Eligibility Checker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                        <a class="nav-link" href="index.html#contact" data-i18n="contact-link">Contact</a>
                     </li>
                 </ul>
+                <div class="dropdown ms-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span data-i18n="language">Language</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="hi">हिन्दी</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="mr">मराठी</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Detailed Section for Pradhan Mantri Awas Yojana (PMAY) -->
+    <!-- Detailed Section for PMAY -->
     <section class="container mt-5">
-        <h2 class="text-primary text-center">Pradhan Mantri Awas Yojana (PMAY)</h2>
+        <h2 class="text-primary text-center" data-i18n="awas-title">Pradhan Mantri Awas Yojana (PMAY)</h2>
         <div class="mt-4">
-            <p class="lead">
+            <p class="lead" data-i18n="awas-desc">
                 The Pradhan Mantri Awas Yojana aims to provide affordable housing to the urban poor, ensuring housing for all by 2022.
             </p>
-            <h3 class="text-primary">Eligibility Criteria</h3>
+            <h3 class="text-primary" data-i18n="awas-eligibility">Eligibility Criteria</h3>
             <ul>
-                <li>Must be a citizen of India.</li>
-                <li>Should belong to the Economically Weaker Section (EWS), Low-Income Group (LIG), or Middle-Income Group (MIG).</li>
-                <li>Must not own a pucca house anywhere in India.</li>
+                <li data-i18n="awas-citizen">Must be a citizen of India.</li>
+                <li data-i18n="awas-income-group">Should belong to the Economically Weaker Section (EWS), Low-Income Group (LIG), or Middle-Income Group (MIG).</li>
+                <li data-i18n="awas-no-house">Must not own a pucca house anywhere in India.</li>
             </ul>
 
-            <h3 class="text-primary">Benefits</h3>
+            <h3 class="text-primary" data-i18n="awas-benefits">Benefits</h3>
             <ul>
-                <li>Subsidized home loan interest rates for eligible applicants.</li>
-                <li>Financial assistance for construction or purchase of a house.</li>
-                <li>Access to additional incentives for women, SC/ST, and disabled individuals.</li>
+                <li data-i18n="awas-benefit1">Subsidized home loan interest rates for eligible applicants.</li>
+                <li data-i18n="awas-benefit2">Financial assistance for construction or purchase of a house.</li>
+                <li data-i18n="awas-benefit3">Access to additional incentives for women, SC/ST, and disabled individuals.</li>
             </ul>
 
-            <h3 class="text-primary">How to Apply</h3>
-            <p>
+            <h3 class="text-primary" data-i18n="awas-apply">How to Apply</h3>
+            <p data-i18n="awas-apply-desc">
                 Interested applicants can apply through the official PMAY website or designated banks. 
-                <a href="https://pmaymis.gov.in/" target="_blank" class="btn btn-link">Apply for Pradhan Mantri Awas Yojana Online</a>
+                <a href="https://pmaymis.gov.in/" target="_blank" class="btn btn-link" data-i18n="awas-apply-link">Apply for Pradhan Mantri Awas Yojana Online</a>
             </p>
 
-            <a href="index.html#schemes" class="btn btn-primary mt-3">Back to Schemes</a>
+            <a href="index.html#schemes" class="btn btn-primary mt-3" data-i18n="awas-back">Back to Schemes</a>
         </div>
     </section>
 
@@ -67,13 +77,15 @@
     <footer class="bg-primary text-white text-center py-4 mt-5">
         <p>&copy; 2024 Maharashtra Migrant Worker Schemes. All rights reserved.</p>
         <div style="display: flex; justify-content: center; gap: 20px;">
-            <a href="#" style="color: white;">About Us</a>
-            <a href="#" style="color: white;">Privacy Policy</a>
-            <a href="#" style="color: white;">Terms of Service</a>
+            <a href="#" style="color: white;" data-i18n="footer-about">About Us</a>
+            <a href="#" style="color: white;" data-i18n="footer-privacy">Privacy Policy</a>
+            <a href="#" style="color: white;" data-i18n="footer-terms">Terms of Service</a>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="translation.js"></script>
+    <script src="atal.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</title>
+    <title data-i18n="title">Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,67 +12,79 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">Maharashtra Migrant Schemes</a>
+            <a class="navbar-brand" href="#" data-i18n="navbar.brand">Maharashtra Migrant Schemes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#schemes">Schemes</a>
+                        <a class="nav-link" href="index.html#schemes" data-i18n="navbar.schemes">Schemes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#eligibility-checker">Eligibility Checker</a>
+                        <a class="nav-link" href="index.html#eligibility-checker" data-i18n="navbar.eligibilityChecker">Eligibility Checker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                        <a class="nav-link" href="index.html#contact" data-i18n="navbar.contact">Contact</a>
                     </li>
                 </ul>
+                <div class="dropdown ms-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span data-i18n="language">Language</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="hi">हिन्दी</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="mr">मराठी</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Detailed Section for MGNREGA -->
     <section class="container mt-5">
-        <h2 class="text-primary text-center">Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</h2>
+        <h2 class="text-primary text-center" data-i18n="mgnrega.title">Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</h2>
         <div class="mt-4">
-            <p class="lead">
+            <p class="lead" data-i18n="mgnrega.description">
                 MGNREGA is a rural employment scheme that guarantees 100 days of wage employment to rural households every year.
             </p>
-            <h3 class="text-primary">Eligibility Criteria</h3>
+            <h3 class="text-primary" data-i18n="mgnrega.eligibilityTitle">Eligibility Criteria</h3>
             <ul>
-                <li>Applicable to adult members of rural households</li>
-                <li>No specific eligibility on income, caste, or gender</li>
-                <li>Households willing to do unskilled manual work can apply</li>
+                <li data-i18n="mgnrega.eligibility1">Applicable to adult members of rural households</li>
+                <li data-i18n="mgnrega.eligibility2">No specific eligibility on income, caste, or gender</li>
+                <li data-i18n="mgnrega.eligibility3">Households willing to do unskilled manual work can apply</li>
             </ul>
 
-            <h3 class="text-primary">Benefits</h3>
+            <h3 class="text-primary" data-i18n="mgnrega.benefitsTitle">Benefits</h3>
             <ul>
-                <li>100 days of guaranteed wage employment per financial year.</li>
-                <li>Ensures livelihood security for rural households.</li>
+                <li data-i18n="mgnrega.benefit1">100 days of guaranteed wage employment per financial year.</li>
+                <li data-i18n="mgnrega.benefit2">Ensures livelihood security for rural households.</li>
             </ul>
 
-            <h3 class="text-primary">How to Apply</h3>
-            <p>
+            <h3 class="text-primary" data-i18n="mgnrega.applyTitle">How to Apply</h3>
+            <p data-i18n="mgnrega.applyDescription">
                 You can apply by registering at your Gram Panchayat or online through the official MGNREGA website. 
-                <a href="https://nrega.nic.in/netnrega/home.aspx" target="_blank" class="btn btn-link">Apply for MGNREGA Online</a>
+                <a href="https://nrega.nic.in/netnrega/home.aspx" target="_blank" class="btn btn-link" data-i18n="mgnrega.applyLink">Apply for MGNREGA Online</a>
             </p>
 
-            <a href="index.html#schemes" class="btn btn-primary mt-3">Back to Schemes</a>
+            <a href="index.html#schemes" class="btn btn-primary mt-3" data-i18n="mgnrega.backToSchemes">Back to Schemes</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center py-4 mt-5">
-        <p>&copy; 2024 Maharashtra Migrant Worker Schemes. All rights reserved.</p>
+        <p data-i18n="footer.copyright">&copy; 2024 Maharashtra Migrant Worker Schemes. All rights reserved.</p>
         <div style="display: flex; justify-content: center; gap: 20px;">
-            <a href="#" style="color: white;">About Us</a>
-            <a href="#" style="color: white;">Privacy Policy</a>
-            <a href="#" style="color: white;">Terms of Service</a>
+            <a href="#" style="color: white;" data-i18n="footer.about">About Us</a>
+            <a href="#" style="color: white;" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" style="color: white;" data-i18n="footer.terms">Terms of Service</a>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="translation.js"></script>
+    <script src="atal.js"></script>
 </body>
 </html>

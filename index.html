@@ -6,35 +6,47 @@
     <title>Community Compass</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">Maharashtra Migrant Schemes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#schemes" data-i18n="navbar-brand">Maharashtra Migrant Schemes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#schemes">Schemes</a>
+                        <a id="schemes-link" class="nav-link" href="#schemes" data-i18n="schemes-link">Schemes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eligibility-checker">Eligibility Checker</a>
+                        <a id="eligibility-link" class="nav-link" href="#eligibility-checker" data-i18n="eligibility-link">Eligibility Checker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a id="contact-link" class="nav-link" href="#contact" data-i18n="contact-link">Contact</a>
                     </li>
                 </ul>
-                 <!-- Search bar -->
-                 <form class="d-flex ms-3">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 20px;">
-                    <button class="btn btn-light" type="submit" style="border-radius: 20px;">Search</button>
+                <!-- Language Selector in Navbar -->
+                <div class="dropdown ms-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <span data-i18n="language">Language</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="hi">हिन्दी</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="mr">मराठी</a></li>
+                    </ul>
+                </div>
+                <!-- Search bar -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
+                           data-i18n-placeholder="search-placeholder" style="border-radius: 20px;">
+                    <button class="btn btn-light" type="submit" data-i18n="search-button" style="border-radius: 20px;">Search</button>
                 </form>
             </div>
         </div>
@@ -42,22 +54,22 @@
 
     <!-- Hero Section -->
     <div class="hero text-center text-white bg-primary py-5">
-        <h1>Welcome to Maharashtra Migrant Worker Schemes</h1>
-        <p class="lead">Find out about the schemes and benefits available for migrant workers in Maharashtra.</p>
-        <button class="btn btn-light btn-lg mt-3">Learn More</button>
+        <h1 id="hero-title" data-i18n="hero-title">Welcome to Maharashtra Migrant Worker Schemes</h1>
+        <p id="hero-description" class="lead" data-i18n="hero-description">Find out about the schemes and benefits available for migrant workers in Maharashtra.</p>
+        <button id="learn-more-btn" class="btn btn-light" href="#schemes" data-i18n="learn-more-btn" onclick="location.href='#schemes'">Learn More</button>
     </div>
 
     <!-- Schemes Section -->
     <section id="schemes" class="container mt-5">
-        <h2 class="section-title text-center text-primary">Available Schemes</h2>
+        <h2 class="section-title text-center text-primary" data-i18n="schemes-title">Available Schemes</h2>
         <div class="row mt-4">
             <!-- Scheme 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Pradhan Mantri Shram Yogi Maandhan (PMSYM)</h5>
-                        <p class="card-text">A pension scheme for unorganized workers. Provides a fixed monthly pension after retirement.</p>
-                        <a href="pmsym-details.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme1-title">Pradhan Mantri Shram Yogi Maandhan (PMSYM)</h5>
+                        <p class="card-text" data-i18n="scheme1-desc">A pension scheme for unorganized workers. Provides a fixed monthly pension after retirement.</p>
+                        <a href="pmsym-details.html" class="btn btn-primary btn-sm" data-i18n="scheme1-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -65,9 +77,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Atal Pension Yojana (APY)</h5>
-                        <p class="card-text">A pension scheme for workers in the unorganized sector. Ensures a guaranteed pension after 60 years of age.</p>
-                        <a href="atal.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme2-title">Atal Pension Yojana (APY)</h5>
+                        <p class="card-text" data-i18n="scheme2-desc">A pension scheme for workers in the unorganized sector. Ensures a guaranteed pension after 60 years of age.</p>
+                        <a href="atal.html" class="btn btn-primary btn-sm" data-i18n="scheme2-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -75,9 +87,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Maharashtra Migrant Worker Welfare Scheme</h5>
-                        <p class="card-text">A state-specific scheme aimed at providing financial and healthcare assistance to migrant workers.</p>
-                        <a href="mmwws.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme3-title">Maharashtra Migrant Worker Welfare Scheme</h5>
+                        <p class="card-text" data-i18n="scheme3-desc">A state-specific scheme aimed at providing financial and healthcare assistance to migrant workers.</p>
+                        <a href="mmwws.html" class="btn btn-primary btn-sm" data-i18n="scheme3-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -85,9 +97,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">e-Shram</h5>
-                        <p class="card-text">A national database for unorganized workers to provide them with social security benefits.</p>
-                        <a href="esharam.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme4-title">e-Shram</h5>
+                        <p class="card-text" data-i18n="scheme4-desc">A national database for unorganized workers to provide them with social security benefits.</p>
+                        <a href="esharam.html" class="btn btn-primary btn-sm" data-i18n="scheme4-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -95,9 +107,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Pradhan Mantri Awas Yojana (PMAY)</h5>
-                        <p class="card-text">An affordable housing scheme for economically weaker sections, including migrant workers.</p>
-                        <a href="awas.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme5-title">Pradhan Mantri Awas Yojana (PMAY)</h5>
+                        <p class="card-text" data-i18n="scheme5-desc">An affordable housing scheme for economically weaker sections, including migrant workers.</p>
+                        <a href="awas.html" class="btn btn-primary btn-sm" data-i18n="scheme5-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -105,9 +117,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</h5>
-                        <p class="card-text">Guarantees 100 days of employment in rural areas for unskilled labor, benefiting migrant workers.</p>
-                        <a href="manrega.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme6-title">Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)</h5>
+                        <p class="card-text" data-i18n="scheme6-desc">Guarantees 100 days of employment in rural areas for unskilled labor, benefiting migrant workers.</p>
+                        <a href="manrega.html" class="btn btn-primary btn-sm" data-i18n="scheme6-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -115,9 +127,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Ayushman Bharat</h5>
-                        <p class="card-text">A health insurance scheme providing free treatment for low-income workers at empaneled hospitals.</p>
-                        <a href="ayushman.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme7-title">Ayushman Bharat</h5>
+                        <p class="card-text" data-i18n="scheme7-desc">A health insurance scheme providing free treatment for low-income workers at empaneled hospitals.</p>
+                        <a href="ayushman.html" class="btn btn-primary btn-sm" data-i18n="scheme7-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -125,9 +137,9 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Public Distribution System (PDS)</h5>
-                        <p class="card-text">Provides subsidized food grains to low-income families, including migrant workers.</p>
-                        <a href="pds.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme8-title">Public Distribution System (PDS)</h5>
+                        <p class="card-text" data-i18n="scheme8-desc">Provides subsidized food grains to low-income families, including migrant workers.</p>
+                        <a href="pds.html" class="btn btn-primary btn-sm" data-i18n="scheme8-readmore">Read More</a>
                     </div>
                 </div>
             </div>
@@ -135,67 +147,68 @@
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">National Social Assistance Programme (NSAP)</h5>
-                        <p class="card-text">Provides financial assistance to the elderly, widows, and persons with disabilities among migrant workers.</p>
-                        <a href="nsap.html" class="btn btn-primary btn-sm">Read More</a>
+                        <h5 class="card-title text-primary" data-i18n="scheme9-title">National Social Assistance Programme (NSAP)</h5>
+                        <p class="card-text" data-i18n="scheme9-desc">Provides financial assistance to the elderly, widows, and persons with disabilities among migrant workers.</p>
+                        <a href="nsap.html" class="btn btn-primary btn-sm" data-i18n="scheme9-readmore">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   <!-- Eligibility Checker Section -->
-<section id="eligibility-checker" class="container mt-5">
-    <h2 class="text-center text-primary">Check Eligibility</h2>
-    <form id="eligibility-form" class="row g-3 mt-3 bg-light p-4 rounded shadow-sm">
-        <div class="col-md-6">
-            <label for="age" class="form-label text-primary">Age</label>
-            <input type="number" class="form-control form-control-lg" id="age" name="age" placeholder="Enter your age">
-        </div>
-        <div class="col-md-6">
-            <label for="occupation" class="form-label text-primary">Occupation</label>
-            <select class="form-select form-select-lg" id="occupation" name="occupation">
-                <option selected>Select your occupation</option>
-                <option value="construction">Construction Worker</option>
-                <option value="farm-laborer">Farm Laborer</option>
-                <option value="factory-worker">Factory Worker</option>
-                <option value="domestic-worker">Domestic Worker</option>
-                <option value="street-vendor">Street Vendor</option>
-            </select>
-        </div>
-        <div class="col-md-12">
-            <label for="income" class="form-label text-primary">Monthly Income</label>
-            <input type="number" class="form-control form-control-lg" id="income" name="income" placeholder="Enter your monthly income">
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-lg mt-3">Check Eligibility</button>
-        </div>
-    </form>
-</section>
-
-
-
-
+    <!-- Eligibility Checker Section -->
+    <section id="eligibility-checker" class="container mt-5">
+        <h2 class="text-center text-primary" data-i18n="eligibility-title">Check Eligibility</h2>
+        <form id="eligibility-form" class="row g-3 mt-3 bg-light p-4 rounded shadow-sm">
+            <div class="col-md-6">
+                <label for="age" class="form-label text-primary" data-i18n="eligibility-age-label">Age</label>
+                <input type="number" class="form-control form-control-lg" id="age" name="age" 
+                       placeholder="Enter your age" data-i18n-placeholder="eligibility-age-placeholder">
+            </div>
+            <div class="col-md-6">
+                <label for="occupation" class="form-label text-primary" data-i18n="eligibility-occupation-label">Occupation</label>
+                <select class="form-select form-select-lg" id="occupation" name="occupation">
+                    <option selected data-i18n="select-occupation">Select your occupation</option>
+                    <option value="construction" data-i18n="occupation-construction">Construction Worker</option>
+                    <option value="farm-laborer" data-i18n="occupation-farm-laborer">Farm Laborer</option>
+                    <option value="factory-worker" data-i18n="occupation-factory-worker">Factory Worker</option>
+                    <option value="domestic-worker" data-i18n="occupation-domestic-worker">Domestic Worker</option>
+                    <option value="street-vendor" data-i18n="occupation-street-vendor">Street Vendor</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="income" class="form-label text-primary" data-i18n="eligibility-income-label">Monthly Income</label>
+                <input type="number" class="form-control form-control-lg" id="income" name="income" 
+                       placeholder="Enter your monthly income" data-i18n-placeholder="eligibility-income-placeholder">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg mt-3" data-i18n="eligibility-submit">Check Eligibility</button>
+            </div>
+        </form>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container mt-5 mb-5">
-        <h2 class="section-title text-center text-primary">Contact Us</h2>
-        <p class="text-center">If you have any questions or need assistance, feel free to reach out.</p>
+        <h2 class="section-title text-center text-primary" data-i18n="contact-title">Contact Us</h2>
+        <p class="text-center" data-i18n="contact-p">If you have any questions or need assistance, feel free to reach out.</p>
         <form class="row g-3 mt-3 bg-light p-4 rounded shadow-sm">
             <div class="col-md-6">
-                <label for="name" class="form-label text-primary">Name</label>
-                <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name">
+                <label for="name" class="form-label text-primary" data-i18n="contact-name-label">Name</label>
+                <input type="text" class="form-control form-control-lg" id="name" 
+                       placeholder="Enter your name" data-i18n-placeholder="contact-name-placeholder">
             </div>
             <div class="col-md-6">
-                <label for="email" class="form-label text-primary">Email</label>
-                <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your email">
+                <label for="email" class="form-label text-primary" data-i18n="contact-email-label">Email</label>
+                <input type="email" class="form-control form-control-lg" id="email" 
+                       placeholder="Enter your email" data-i18n-placeholder="contact-email-placeholder">
             </div>
             <div class="col-md-12">
-                <label for="message" class="form-label text-primary">Message</label>
-                <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Your message"></textarea>
+                <label for="message" class="form-label text-primary" data-i18n="contact-message-label">Message</label>
+                <textarea class="form-control form-control-lg" id="message" rows="4" 
+                          placeholder="Your message" data-i18n-placeholder="contact-message-placeholder"></textarea>
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary btn-lg mt-3">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-lg mt-3" data-i18n="contact-submit">Send Message</button>
             </div>
         </form>
     </section>
@@ -204,14 +217,17 @@
     <footer class="bg-primary text-white text-center py-4">
         <p>&copy; 2024 Maharashtra Migrant Worker Schemes. All rights reserved.</p>
         <div style="display: flex; justify-content: center; gap: 20px;">
-            <a href="#" style="color: white;">About Us</a>
-            <a href="#" style="color: white;">Privacy Policy</a>
-            <a href="#" style="color: white;">Terms of Service</a>
+            <a id="about-link" href="about.html" data-i18n="footer-about" style="color: white;">About Us</a>
+            <a id="privacy-link" href="privacy.html" data-i18n="footer-privacy" style="color: white;">Privacy Policy</a>
+            <a id="terms-link" href="terms.html" data-i18n="footer-terms" style="color: white;">Terms of Service</a>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src ="script.js"></script>
+    <!-- Translation Data -->
+    <script src="translation.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
 </body>
 </html>

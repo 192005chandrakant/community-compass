@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atal Pension Yojana (APY)</title>
+    <title data-i18n="atal-title">Atal Pension Yojana (APY)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">Maharashtra Migrant Schemes</a>
+            <a class="navbar-brand" href="#" data-i18n="navbar-brand">Maharashtra Migrant Schemes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#schemes">Schemes</a>
+                        <a class="nav-link" href="index.html#schemes" data-i18n="schemes-link">Schemes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#eligibility-checker">Eligibility Checker</a>
+                        <a class="nav-link" href="index.html#eligibility-checker" data-i18n="eligibility-link">Eligibility Checker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                        <a class="nav-link" href="index.html#contact" data-i18n="contact-link">Contact</a>
                     </li>
                 </ul>
+                <div class="dropdown ms-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span data-i18n="language">Language</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="hi">हिन्दी</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="mr">मराठी</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Detailed Section for APY -->
     <section class="container mt-5">
-        <h2 class="text-primary text-center">Atal Pension Yojana (APY)</h2>
+        <h2 class="text-primary text-center" data-i18n="atal-title">Atal Pension Yojana (APY)</h2>
         <div class="mt-4">
-            <p class="lead">
+            <p class="lead" data-i18n="atal-desc">
                 The Atal Pension Yojana (APY) is a pension scheme for workers in the unorganized sector, designed to ensure a guaranteed pension after 60 years of age.
             </p>
-            <h3 class="text-primary">Eligibility Criteria</h3>
+            <h3 class="text-primary" data-i18n="atal-eligibility">Eligibility Criteria</h3>
             <ul>
-                <li>Age: 18 to 40 years</li>
-                <li>Must have a bank account</li>
-                <li>Can contribute a fixed amount monthly until retirement</li>
+                <li data-i18n="atal-age">Age: 18 to 40 years</li>
+                <li data-i18n="atal-bank">Must have a bank account</li>
+                <li data-i18n="atal-contribute">Can contribute a fixed amount monthly until retirement</li>
             </ul>
 
-            <h3 class="text-primary">Benefits</h3>
+            <h3 class="text-primary" data-i18n="atal-benefits">Benefits</h3>
             <ul>
-                <li>Guaranteed pension of ₹1,000 to ₹5,000 after retirement.</li>
-                <li>Government contributes 50% of the user's contribution.</li>
+                <li data-i18n="atal-benefit1">Guaranteed pension of ₹1,000 to ₹5,000 after retirement.</li>
+                <li data-i18n="atal-benefit2">Government contributes 50% of the user's contribution.</li>
             </ul>
 
-            <h3 class="text-primary">How to Apply</h3>
-            <p>
+            <h3 class="text-primary" data-i18n="atal-apply">How to Apply</h3>
+            <p data-i18n="atal-apply-desc">
                 You can apply for APY by visiting your nearest bank or through online banking services. 
-                <a href="https://npscra.nsdl.co.in/scheme-details.php" target="_blank" class="btn btn-link">Apply for APY Online</a>
+                <a href="https://npscra.nsdl.co.in/scheme-details.php" target="_blank" class="btn btn-link" data-i18n="atal-apply-link">Apply for APY Online</a>
             </p>
 
-            <a href="index.html#schemes" class="btn btn-primary mt-3">Back to Schemes</a>
+            <a href="index.html#schemes" class="btn btn-primary mt-3" data-i18n="atal-back">Back to Schemes</a>
         </div>
     </section>
 
@@ -66,13 +77,15 @@
     <footer class="bg-primary text-white text-center py-4 mt-5">
         <p>&copy; 2024 Maharashtra Migrant Worker Schemes. All rights reserved.</p>
         <div style="display: flex; justify-content: center; gap: 20px;">
-            <a href="#" style="color: white;">About Us</a>
-            <a href="#" style="color: white;">Privacy Policy</a>
-            <a href="#" style="color: white;">Terms of Service</a>
+            <a href="#" style="color: white;" data-i18n="footer-about">About Us</a>
+            <a href="#" style="color: white;" data-i18n="footer-privacy">Privacy Policy</a>
+            <a href="#" style="color: white;" data-i18n="footer-terms">Terms of Service</a>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="translation.js"></script>
+    <script src="atal.js"></script>
 </body>
 </html>
