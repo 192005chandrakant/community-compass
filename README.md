@@ -1,1 +1,1 @@
-this is my costom readme.md
+this is my readme.md for community compass

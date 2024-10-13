@@ -216,7 +216,7 @@ const translations = {
   "pmsym.applyTitle": "How to Apply",
   "pmsym.applyDescription": "Workers can enroll by visiting the nearest Common Service Center (CSC) or registering online through the official PMSYM portal.",
   "pmsym.backToSchemes": "Back to Schemes",
-
+"atal-ba":"Apply now",
 
       
     },
@@ -434,7 +434,7 @@ const translations = {
 "pmsym.applyTitle": "कैसे आवेदन करें",
 "pmsym.applyDescription": "श्रमिक नजदीकी सामान्य सेवा केंद्र (CSC) पर जाकर या आधिकारिक PMSYM पोर्टल के माध्यम से ऑनलाइन पंजीकरण कर सकते हैं।",
 "pmsym.backToSchemes": "योजनाओं पर वापस जाएं",
-
+"atal-ba":"अभी आवेदन करें",
          
         
    
@@ -652,7 +652,7 @@ const translations = {
  "pmsym.applyTitle": "कसा अर्ज करावा",
  "pmsym.applyDescription": "कामगार नजीकच्या सामान्य सेवा केंद्रावर (CSC) जाऊन किंवा अधिकृत PMSYM पोर्टलद्वारे ऑनलाइन पंजीकरण करू शकतात.",
  "pmsym.backToSchemes": "योजनांवर परत जा",
-
+"atal-ba":"आता अर्ज करा",
 
 
     }
